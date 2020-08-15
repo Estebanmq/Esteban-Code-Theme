@@ -1,8 +1,11 @@
-body {
+body { 
 	font-size: 16px;
 }
+#Prueba { 
+	color-interpolation-filters: auto;
+}
 .bg-light {
-	background-color:#191818!important;
+	background-color:#191818!important;  
 }
 .navbar.navbar-light .navbar-nav .nav-item .nav-link {
 	color: #ffffff;
@@ -17,7 +20,7 @@ body {
 	color: #53DFF0;
 }
 .navbar.navbar-light .navbar-nav .nav-item.active>.nav-link:hover  {
-	color: #53DFF0;
+	color: rgb(83, 223, 240); 
 }
 .btn-outline-success {
     border: 2px solid #ffffff!important;

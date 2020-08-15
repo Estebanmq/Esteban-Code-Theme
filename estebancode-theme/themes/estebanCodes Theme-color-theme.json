@@ -1,5 +1,20 @@
+/*
+	Plantilla
+	{
+			//
+			"name": "",
+			"scope": [
+				""
+			],
+			"settings": {
+				"foreground": ""
+			}
+		},
+*/
+
+
 {
-	"name": "estebanCodes Theme",
+	"name": "Esteban Codes Theme",
 	"type": "dark",
 	"colors": {
 		"editor.background": "#323232",
@@ -8,8 +23,9 @@
 		"sideBarTitle.foreground": "#126174"
 	},
 	"tokenColors": [
+		// Colores en general
 		{
-			//Comentarios
+			// Comentarios
 			"name": "Comment",
 			"scope": [
 				"comment",
@@ -29,39 +45,6 @@
 			],
 			"settings": {
 				"foreground": "#56CBCB"
-			}
-		},
-		{
-			// Mirar
-			"name": "Colors",
-			"scope": [
-				"constant.other.color"
-			],
-			"settings": {
-				"foreground": "#ff05d5"
-			}
-		},
-		{
-			//Invalido: errores de sintaxis <h1> <h1> <- No cerrada
-			"name": "Invalid",
-			"scope": [
-				"invalid",
-				"invalid.illegal"
-			],
-			"settings": {
-				"foreground": "#FF8763"
-			}
-		},
-		{
-			//Palabras clave como el tipo de variable, tipo de metodo (static, void etc...)
-			"name": "Keyword, Storage",
-			"scope": [
-				"keyword",
-				"storage.type",
-				"storage.modifier"
-			],
-			"settings": {
-				"foreground": "#FF857C"
 			}
 		},
 		{
@@ -85,18 +68,164 @@
 				"foreground": "#dad8d8d9"
 			}
 		},
-		{
-			//Etiquetas como div, h1 etc
-			"name": "Tag",
+		/*{
+			// Mirar
+			"name": "Colors",
 			"scope": [
-				"entity.name.tag",
-				"meta.tag.sgml",
-				"markup.deleted.git_gutter"
+				"constant.other.color"
+			],
+			"settings": {
+				"foreground": "#ff05d5"
+			}
+		},
+		*/
+		{
+			//Invalido: errores de sintaxis
+			"name": "Invalid",
+			"scope": [
+				"invalid",
+				"invalid.illegal"
+			],
+			"settings": {
+				"foreground": "#FF8763"
+			}
+		},
+
+
+		// Colores archivos HTML 
+		{
+			"name": "Etiquetas HTML",
+			"scope": [
+				"entity.name.tag.html"
 			],
 			"settings": {
 				"foreground": "#FF857C"
 			}
 		},
+		{
+			"name": "Atributos",
+			"scope": [
+				"entity.other.attribute-name.html"
+			],
+			"settings": {
+				"foreground": "#F5C863"
+			}
+		},
+		{
+			//
+			"name": "Valor de atributos",
+			"scope": [
+				"string.quoted.double.html"
+			],
+			"settings": {
+				"foreground": "#93DCB3"
+			}
+		},
+		{
+			"name": "Operadores",
+			"scope": [
+				"punctuation.definition.tag.html",
+				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.end.html"
+			],
+			"settings": {
+				"foreground": "#dad8d8d9"
+			}
+		},
+		{
+			"name": "Texto",
+			"scope": [
+				"text.html.derivative"
+			],
+			"settings": {
+				"foreground": "#eaeaea"
+			}
+		},
+		
+		// Colores arhcivos CSS
+		{
+			"name": "Etiquetas CSS",
+			"scope": [
+				"entity.name.tag.css"
+			],
+			"settings": {
+				"foreground": "#FF857C"
+			}
+		},
+		{
+			"name": "Propiedad CSS",
+			"scope": [
+				"support.type.property-name.css"
+			],
+			"settings": {
+				"foreground": "#56CBCB"
+			}
+		},
+		{
+			"name": "Etiquetas ID",
+			"scope": [
+				"entity.other.attribute-name.id.css"
+			],
+			"settings": {
+				"foreground": "#F5C863"
+			}
+		},
+		{
+			"name": "Etiquetas Clase",
+			"scope": [
+				"entity.other.attribute-name.class.css"
+			],
+			"settings": {
+				"foreground": "#F5C863"
+			}
+		},
+		{
+			"name": "Valores numericos y valores de colores",
+			"scope": [
+				"constant.numeric.css",
+				"constant.other.color.rgb-value.hex.css"
+			],
+			"settings": {
+				//"foreground": "#C39BA6"
+				"foreground": "#F1D4AF"
+			}
+		},
+		{
+			"name": "Unidades de medida",
+			"scope": [
+				"keyword.other.unit",
+				"keyword.other.important.css"
+			],
+			"settings": {
+				"foreground": "#FF857C"
+			}
+		},
+		{
+			"name": "Function Misc",
+			"scope": [
+				"support.function.misc.css"
+			],
+			"settings": {
+				"foreground": "#93DCB3"
+			}
+		},
+		
+
+
+		{
+			//Palabras clave como el tipo de variable, tipo de metodo (static, void etc...)
+			"name": "Keyword, Storage",
+			"scope": [
+				"keyword",
+				"storage.type",
+				"storage.modifier"
+			],
+			"settings": {
+				"foreground": "#FF857C"
+			}
+		},
+		
+		
 		{
 			// Nombres de metodos
 			"name": "Function, Special Method",
@@ -112,26 +241,46 @@
 			}
 		},
 		{
-			// Variables a nivel de bloque
+			// Variables a nivel de bloque (en JS console.)
 			"name": "Block Level Variables",
 			"scope": [
 				"meta.block variable.other"
 			],
 			"settings": {
-				"foreground": "#fff"
+				"foreground": "#ffffffd9"
 			}
 		},
+
+
+
+
+		
 		{
-			// Otras variables, Strings etc
+			// Mirar
 			"name": "Other Variable, String Link",
 			"scope": [
 				"support.other.variable",
 				"string.other.link"
 			],
 			"settings": {
-				"foreground": "#fff"
+				"foreground": "#ff0000d9"
 			}
 		},
+
+
+
+
+		{
+			// 
+			"name": "",
+			"scope": [
+				"storage.type.java"
+			],
+			"settings": {
+				"foreground": "#56CBCB"
+			}
+		},
+		
 		{
 			// 
 			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
@@ -638,6 +787,21 @@
 			"settings": {
 				"foreground": "#EEFFFF"
 			}
-		}
+		},
+
+		// GENERAL
+		{
+			//Etiquetas
+			"name": "Tag",
+			"scope": [
+				"entity.name.tag",
+				"meta.tag.sgml",
+				"markup.deleted.git_gutter"
+			],
+			"settings": {
+				"foreground": "#FF857C"
+			}
+		},
+
 	]
 }
