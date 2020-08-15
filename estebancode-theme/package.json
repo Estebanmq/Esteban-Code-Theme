@@ -1,0 +1,21 @@
+{
+    "name": "estebancode-theme",
+    "displayName": "estebanCode-Theme",
+    "description": "Theme V1",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "estebanCodes Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/estebanCodes Theme-color-theme.json"
+            }
+        ]
+    }
+}
